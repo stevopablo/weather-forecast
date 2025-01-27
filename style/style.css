@@ -75,7 +75,6 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
 }
 .number-temp{
     width: 240px;
