@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="/img/karte.png" type="image/x-icon">
+
+</head>
+<body>
+    <div id="main-container">
+        <div id="form-city">
+            <form id="search">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <input
+                    type="search"
+                    name="city-name" 
+                    id="city-name" 
+                    placeholder="nome da cidade">
+
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <div id="weather">
+            <h1 id="title">valinhos, BR</h1>
+            <div id="infos">
+                <div id="temp">
+                    <img src="./img/wetter.png" alt="cloud">
+                </div>
+                <div>
+                    <p id="temp_value">
+                        34
+                    </p>
+                    <p id="temp_description">
+                        nublado
+                    </p>
+                </div>
+            </div>
+        </div>
+            
+            
+        <div id="other-infos">
+            <div class="info">
+                <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                <div>
+                    <h2>temp_Max</h2>
+                    <p id="tem_max"></p>
+                </div>
+            </div>
+
+            <div class="info">
+                <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                <div>
+                    <h2>temp_min</h2>
+                    <p id="temp_min">12 <sup>c</sup></p>
+                </div>
+            </div>
+
+            <div class="info">
+                <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+                <div>
+                    <h2>humidade</h2>
+                    <p id="humidity">
+                        60%
+                    </p>
+                </div>
+            </div>
+
+            <div class="info">
+                <i id="wind_icon" class="fa-solid fa-wind"></i>
+                <div>
+                    <h2>wind speed</h2>
+                    <p id="wind">
+                        40km/h
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
