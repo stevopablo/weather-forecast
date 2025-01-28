@@ -30,7 +30,15 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.input{
+#lupa{
+    width: 40px;
+}
+
+.show{
+    display: block;
+    /* background-color: bisque; */
+}
+.search{
     width: 540px;
     height: 60px;
     margin: 20px 0px 0px 0px;
@@ -39,6 +47,9 @@ body{
     font-size: 20px;
     padding-left: 10px;
     letter-spacing: 0.80px;
+}
+#city-name input:focus-visible{
+    outline: none;
 }
 .title{
     width: 540px;
@@ -86,7 +97,7 @@ body{
     color: white;
 }
 sup {
-    vertical-align: super; /* Faz com que o texto suba */
+    vertical-align: super;/* Faz com que o texto suba */    
     font-size: 0.8em; /* Ajusta o tamanho da fonte para o superíndice */
  }
 .number-2-temp{
@@ -133,3 +144,10 @@ sup {
     border: none;
 }
 
+#alert {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    color: red;
+    padding-bottom: 8px;
+}

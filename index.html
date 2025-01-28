@@ -10,32 +10,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+<script src="/index.js" defer></script>
 </head>
 <body>
     <div id="main-container">
         <div class="form">
-            <input class="input" type="text" name="input" id="form" placeholder="Fortaleza">
-            <div class="title">Fortaleza, BR</div>
-            <div class="temp">
-                <img class="img-temp" src="/img/wetter.png" alt="">
-                <div class="div-temp">
-                    <div class="number-temp">24,4 <sup>°C</sup></div>
-                    <div class="number-2-temp">Nublado</div>
-                </div>
-            </div>
-            <div class="temps">
-                <div class="div-1">
-                    <div class="temp-1"></div>
-                    <div class="temp-1"></div>
-                </div>
-                <div class="div-2">
-                    <div class="temp-1"></div>
-                    <div class="temp-1"></div>
-                </div>
+            <form>
+                <input class="search" type="text" name="input" id="city-name" placeholder="Fortaleza">
+                <button type="submit">
+                    <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
 
+            <!-- show -->
+            <div id="weather">
+                <div class="show">
+
+                    
+                    <div class="title">Fortaleza, BR</div>
+                    <div class="temp">
+                        <img class="img-temp" src="/img/wetter.png" alt="">
+                        <div class="div-temp">
+                            <div class="number-temp">24,4 <sup>°C</sup></div>
+                            <div class="number-2-temp">Nublado</div>
+                        </div>
+                    </div>
+                    <div class="temps">
+                        <div class="div-1">
+                            <div class="temp-1">
+                                <h2>max-temp</h2>
+                                <p id="max_temp">40 <sup>c</sup></p>
+                            </div>
+                            <div class="temp-1">
+                                <h2>min-temp</h2>
+                                <p id="min_temp">17 <sup>c</sup></p>
+                            </div>
+                        </div>
+                        <div class="div-2">
+                            <div class="temp-1">
+                                <h2>humidity</h2>
+                                <p id="humidity">50 %</p>
+                            </div>
+                            <div class="temp-1">
+                                <h2>wind speed</h2>
+                                <p id="wind_speed">56 km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 id="alert"></h1>
+
+                </div>
+                    <!-- SHOW -->
+                </div>
+            <!--  -->
             </div>
         </div>
-        </div>
-
-</html>
+        </html>
